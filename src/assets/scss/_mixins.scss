@@ -1,2 +1,5 @@
-@import "mixins/font-face";
-@import "mixins/burger";
+@import "mixins/font-face"; //Подключение шрифтов
+@import "mixins/flexibleFonts"; //Гибкий шрифт
+@import "mixins/burger"; //Бургер || Крест
+@import "mixins/breakpoints"; //Контейнеры под адапт
+@import "mixins/flex"; //Флекс

@@ -1,0 +1,3 @@
+@mixin flexibleFonts ($value, $multiplier:10) {
+    font-size: calc(100vw / $value * $multiplier);
+}

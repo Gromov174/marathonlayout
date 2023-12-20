@@ -2,3 +2,12 @@
 @import "vars";
 @import "fonts";
 @import "globals";
+
+// global-components
+
+@import "./components/globals/globals";
+
+// components
+
+@import "./components/header";
+@import "./components/burger";

@@ -14,15 +14,15 @@
   background-color: transparent;
   cursor: pointer;
 
-  @include small-tablet {
+  @include tablet {
     right: 7.2rem;
   }
 
-  @include mobile {
+  @include large-phone {
     right: 5.2rem;
   }
 
-  @include small-mobile {
+  @include phone {
     right: 3.2rem;
   }
 

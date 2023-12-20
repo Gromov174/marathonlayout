@@ -1,8 +1,37 @@
 html {
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   height: 100%;
+
+  @include flexibleFonts(1920);
+
+  @include desktop {
+    @include flexibleFonts(1440)
+  }
+
+  @include small-desktop {
+    @include flexibleFonts(1024,9)
+  }
+
+  @include large-tablet {
+    @include flexibleFonts(922,9)
+  }
+
+  @include tablet {
+    @include flexibleFonts(768)
+  }
+
+  @include large-phone {
+    @include flexibleFonts(576)
+  }
+
+  @include phone {
+    @include flexibleFonts(420)
+  }
+
+  @include mini-phone {
+    @include flexibleFonts(320)
+  }
 }
 
 *,
@@ -16,6 +45,8 @@ html {
   min-width: 320px;
   min-height: 100%;
   overflow-x: hidden;
+  font-size: 1.6rem;
+  background: var(--dark-blue  );
 
   &--fixed {
     overflow-y: hidden;
@@ -45,7 +76,7 @@ p {
 button {
   border: none;
   padding: 0;
-  background: transparent; 
+  background: transparent;
   cursor: pointer;
 }
 

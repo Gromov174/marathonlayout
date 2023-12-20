@@ -2,4 +2,7 @@
   @include burger;
   display: none;
   z-index: 3;
+  @include tablet {
+    display: block;
+  }
 }

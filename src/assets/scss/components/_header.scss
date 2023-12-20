@@ -1,0 +1,73 @@
+.header {
+    padding: 1.2rem 1.5rem;
+
+    &__container {
+        width: 100%;
+        @include flex-center-sb
+    }
+
+
+    &__logo {
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 800;
+        color: var(--light-color);
+    }
+
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        width: 100%;
+
+        @include tablet {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: var(--dark-blue) ;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .5s, visibility .5s;
+        }
+
+        &--active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .nav {
+        margin: 0 auto;
+
+        &__list {
+            display: flex;
+            gap: 2rem;
+            @include tablet {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        &__item--active .nav__link {
+            font-weight: 500;
+        }
+
+        &__link {
+            padding: 1rem 0;
+            font-size: 1.4rem;
+            font-weight: 300;
+            line-height: 150%;
+            color: var(--light-color);
+            transition: color .3s;
+            &:hover {
+                color: #d8d8d8;
+            }
+            @include tablet {
+                font-size: 2rem;
+            }
+        }
+    }
+}
